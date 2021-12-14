@@ -22,7 +22,7 @@ public class VehiculoDAO {
 	}
 	
 	public void update(Vehiculo ve) {
-			em.persist(ve);
+			em.merge(ve);
 		}
 	
 	public Vehiculo read(int id) {

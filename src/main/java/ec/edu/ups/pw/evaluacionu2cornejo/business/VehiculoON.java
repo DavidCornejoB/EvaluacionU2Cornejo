@@ -18,6 +18,10 @@ public class VehiculoON implements VehiculoONRemote{
 		daoVehiculo.insert(v);
 	}
 	
+	public void update(Vehiculo v) throws Exception{
+		daoVehiculo.update(v);
+	}
+	
 	public List<Vehiculo> getVehiculos(){
 		return daoVehiculo.getList();
 	}
