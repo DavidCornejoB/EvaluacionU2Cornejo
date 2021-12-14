@@ -23,6 +23,9 @@ public class Vehiculo implements Serializable{
 	
 	@Column(name= "veh_modelo")
 	private String modelo;
+	
+	@Column(name= "veh_color")
+	private String color;
 
 	public int getCodigo() {
 		return codigo;
@@ -47,7 +50,13 @@ public class Vehiculo implements Serializable{
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	
-	
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
 
 }
